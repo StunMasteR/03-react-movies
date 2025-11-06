@@ -14,7 +14,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
       <div className={styles.container}>
         <a
           className={styles.link}
-          href="https://www.themoviedb.org/"
+          href="https://api.themoviedb.org/3/search/movie"
           target="_blank"
           rel="noopener noreferrer"
         >

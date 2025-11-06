@@ -15,12 +15,13 @@ if (!token) {
 }
 
 const api = axios.create({
-  baseURL: 'https://api.themoviedb.org/3',
+  baseURL: 'https://api.themoviedb.org/3/search/movie',
   headers: {
     Authorization: `Bearer ${token}`,
     'Content-Type': 'application/json;charset=utf-8',
   },
 })
+
 
 export async function fetchMovies(query: string, page = 1): Promise<Movie[]> {
   const params = {
