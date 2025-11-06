@@ -15,7 +15,7 @@ const App: React.FC = () => {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null)
 
   const handleSearch = async (query: string) => {
-    // кожен новий пошук очищає попередні результати
+
     setMovies([])
     setError(false)
     setLoading(true)
@@ -23,7 +23,7 @@ const App: React.FC = () => {
     try {
       const results = await fetchMovies(query)
       if (results.length === 0) {
-        // точно такий текст за умовою
+ 
         toast.error('No movies found for your request.')
       } else {
         setMovies(results)

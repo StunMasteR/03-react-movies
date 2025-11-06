@@ -33,7 +33,6 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
 
             onSubmit(query)
 
-            // Очищення інпуту після сабміту
             formRef.current?.reset()
           }}
         >
