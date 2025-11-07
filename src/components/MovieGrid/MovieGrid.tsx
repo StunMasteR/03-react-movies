@@ -17,7 +17,7 @@ const MovieGrid: React.FC<MovieGridProps> = ({ movies, onSelect }) => {
           <div className={styles.card}>
             <img
               className={styles.image}
-              src={`https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png${movie.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
               loading="lazy"
               onClick={() => onSelect(movie)}

@@ -40,7 +40,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
         </button>
 
         <img
-          src={`https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg${movie.backdrop_path}`}
+          src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
           alt={movie.title}
           className={styles.image}
         />

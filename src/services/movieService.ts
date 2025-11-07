@@ -15,7 +15,7 @@ if (!token) {
 }
 
 const api = axios.create({
-  baseURL: 'https://api.themoviedb.org/3/search/movie',
+  baseURL: 'https://api.themoviedb.org/3',
   headers: {
     Authorization: `Bearer ${token}`,
     'Content-Type': 'application/json;charset=utf-8',
