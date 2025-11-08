@@ -1,6 +1,7 @@
 import axios from 'axios'
 import type { Movie } from '../types/movie'
 
+
 interface TMDBSearchResponse {
   page: number
   results: Movie[]
@@ -34,3 +35,5 @@ export async function fetchMovies(query: string, page = 1): Promise<Movie[]> {
   return response.data.results
   
 }
+
+console.log('TOKEN IN PROD:', import.meta.env.VITE_TMDB_TOKEN)
